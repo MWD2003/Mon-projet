@@ -58,12 +58,22 @@
       <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Magnifique Robe 8000fcfa</font></font></p>
       <button type="button"><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acheter</font></font></b></button>
       </div>
+       <div>
+      <p>Aimer</p>
+      <button id="J'aimeBtn">Like</button>
+      <p id="appreciations">Nombre de Like: <span id="count">0</span></p></div>
+      </div>
   </div>
   <div>
       <img src="image/robe2.jpg" alt="#">
       <div class="buttons">
       <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ensemble Hijab 15000FCFA</font></font></p>
       <button type="button"><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acheter</font></font></b></button>
+      </div>
+      <div>
+      <p>Aimer</p>
+      <button id="J'aimeBtn">Like</button>
+      <p id="appreciations">Nombre de Like: <span id="count">0</span></p></div>
       </div>
   </div>
   <div>
@@ -72,12 +82,22 @@
       <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Magnifique Robe 8000FCFA</font></font></p>
       <button type="button"><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acheter</font></font></b></button>
       </div>
+      <div>
+      <p>Aimer</p>
+      <button id="J'aimeBtn">Like</button>
+      <p id="appreciations">Nombre de Like: <span id="count">0</span></p></div>
+      </div>
   </div>
   <div>
       <img src="image/sac7.jpeg" alt="#">
       <div class="buttons">
       <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ensemble 10000fcfa</font></font></p>
       <button type="button"><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acheter</font></font></b></button>
+      </div>
+      <div>
+      <p>Aimer</p>
+      <button id="J'aimeBtn">Like</button>
+      <p id="appreciations">Nombre de Like: <span id="count">0</span></p></div>
       </div>
   </div>
   <div>
@@ -86,12 +106,22 @@
       <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Magnifique Robe 7000fcfa</font></font></p>
       <button type="button"><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acheter</font></font></b></button>
       </div>
+      <div>
+      <p>Aimer</p>
+      <button id="J'aimeBtn">Like</button>
+      <p id="appreciations">Nombre de Like: <span id="count">0</span></p></div>
+      </div>
   </div>
   <div>
       <img src="image/robe13.jpg" alt="#">
       <div class="buttons">
       <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Magnifique Robe 7000fcfa</font></font></p>
       <button type="button"><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acheter</font></font></b></button>
+      </div>
+      <div>
+      <p>Aimer</p>
+      <button id="J'aimeBtn">Like</button>
+      <p id="appreciations">Nombre de Like: <span id="count">0</span></p></div>
       </div>
   </div>
   <div>
@@ -100,6 +130,11 @@
       <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sac à main 6000fcfa</font></font></p>
       <button type="button"><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acheter</font></font></b></button>
       </div>
+      <div>
+      <p>Aimer</p>
+      <button id="J'aimeBtn">Like</button>
+      <p id="appreciations">Nombre de Like: <span id="count">0</span></p></div>
+      </div>
   </div>
   <div>
       <img src="image/robe15.jpg" alt="#">
@@ -107,12 +142,22 @@
       <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Magnifique Robe 8000fcfa</font></font></p>
       <button type="button"><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acheter</font></font></b></button>
       </div>
+      <div>
+      <p>Aimer</p>
+      <button id="J'aimeBtn">Like</button>
+      <p id="appreciations">Nombre de Like: <span id="count">0</span></p></div>
+      </div>
   </div>
   <div>
       <img src="image/sac8.jpeg" alt="#">
       <div class="buttons">
       <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sac à Main 5000fcfa</font></font></p>
       <button type="button"><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acheter</font></font></b></button>
+      </div>
+      <div>
+      <p>Aimer</p>
+      <button id="J'aimeBtn">Like</button>
+      <p id="appreciations">Nombre de Like: <span id="count">0</span></p></div>
       </div>
   </div>
   </div>
@@ -145,8 +190,8 @@
                  <label>Adrsse Mail</label> <br>
                  <input type="email"><br>
                    <br><div>
-                     <label>Mot de passe</label> <br>
-                     <input type="password">
+                    <label>message</label>
+                    <input type="text"><br>
                      <a href="goole.com/wourymode@gmail.com"></a><input type="submit"></a>
                   </div>
                   <section id="title">
@@ -167,4 +212,56 @@
 
 </section>
 </body>
+        <script>
+  // Récupérer l'élément du bouton et l'élément où le nombre d'appréciations sera affiché
+  const LikeBtn = document.getElementById('LikeBtn');
+  const countSpan = document.getElementById('count');
+
+  // Variable pour stocker le nombre d'appréciations
+  let AimerCount = 0;
+
+  // Fonction pour augmenter le nombre d'appréciations et mettre à jour l'affichage
+  function apprecierProduit() {
+    LikeCount++;
+    countSpan.textContent = LikeCount;
+  }
+
+  // Ajouter un écouteur d'événements au bouton
+  JaimeBtn.addEventListener('click', Like);
+
+  
+  
+  const form = document.getElementById('contactForm');
+
+  form.addEventListener('submit', function(event) {
+    // Empêcher le comportement par défaut du formulaire
+    event.preventDefault();
+
+    // Valider les champs du formulaire
+    const Prenom = document.getElementById('name').value;
+    const Nom = document.getElementById('name').value;
+    const Mail = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    if (name.trim() === '') {
+      alert('Veuillez entrer votre nom.');
+      return;
+    }
+
+    if (email.trim() === '') {
+      alert('Veuillez entrer votre adresse email.');
+      return;
+    }
+    if (message.trim() === '') {
+      alert('Veuillez entrer votre message.');
+      return;
+    }
+
+    // Si tous les champs sont valides, soumettre le formulaire
+    alert('Formulaire soumis avec succès!');
+    form.reset(); // Effacer le contenu du formulaire
+  });
+
+
+</script>
 </html>
